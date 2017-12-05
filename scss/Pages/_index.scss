@@ -1,0 +1,33 @@
+/*/*-----_index.html-----*/
+
+.title-search-flights {
+	font-size: 25px;
+}
+/*PAX option*/
+.popover-title {
+	background-color: inherit;
+	border-bottom: none;
+}
+.popover-markup .popover {
+	width: 200%;
+	padding: 10px 0;
+}
+.popover-content label {
+	b {
+		font-size: 13px;
+	}
+	i {
+		font-size: 13px;
+	}
+}
+/*Add another destination display*/
+.add-another-destination {
+	color: $color_green;
+	font-weight: 600;
+	font-size: 13px;
+	float: right;
+	&:hover {
+		color: $color_green;
+	}
+}
+/*/*-----finish _index.html-----*/

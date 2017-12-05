@@ -1,0 +1,85 @@
+/* Start media queries*/
+
+
+@media (max-width: 768px) {
+  .segment-destination:nth-child(2) {
+    top: 103px!important;
+  }
+
+  .bootstrap-timepicker-widget.modal {
+    width: 200px;
+    margin-left: -100px;
+  }
+   .bootstrap-timepicker {
+    width: 100%;
+  }
+  .bootstrap-timepicker .dropdown-menu {
+    width: 100%;
+  }
+  .flight-details-bubble {
+      max-width: 100%!important;
+  }
+  .logo img {
+      max-width: 58%;
+      margin: auto;
+      display: block;
+  }
+  .rights-reserved{
+    display: block;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width:100%!important;
+  }
+  .buttons-home .btn.btn-primary-white, .buttons-home .btn.btn-primary {
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+  }
+  .buttons-home {
+    padding: 5px 0 10px 0;
+  }
+  .flight-time_departure-time,
+  .flight-time_travel-time,
+  .flight-time_arrival-time{
+        margin-right: 15px!important;
+  }
+  .flight-time_radio-button{
+     margin:5px 9px 0 13px!important;
+  }
+  .flight-time_arrival-date {
+    margin-right: 2px!important;
+  }
+  .logo-footer img {
+    float: none;
+  } 
+  .col-price-table{
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .price-table p {
+      font-size: 14px!important;
+  }
+  .stop {
+    width: 30%!important;
+    display:block!important;
+    margin: 7px auto!important;
+  }
+  .loading-page .loading-box h1 {
+        font-size: 27px!important;
+        text-align: center!important;
+  }
+  .loading-page .loading-box .loading-gif {
+    margin: 6px auto!important;
+    float: none!important;
+    width: 46px!important;
+  }
+}
+
+@media (max-width:992px) {
+  .header-top {
+    max-height: none;
+  }
+}
+/* Finish media queries*/

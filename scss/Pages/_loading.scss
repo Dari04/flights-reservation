@@ -1,0 +1,23 @@
+.loading-page {
+    .loading-box {
+      background: hsla(0, 0%, 100%, .9);
+      padding: 40px 58px;
+      box-shadow: 0 2px 1px $box_shadow_color;
+      text-align: center;
+      h1{
+        font-weight: lighter;
+        text-align: left;
+        margin-left: -6px;
+      }
+      .loading-gif{
+          width: 60px;
+          float: right;
+          position: relative;
+          top: 8px;
+          margin-right: -18px;
+        }
+      .form-control {
+        background: $white;
+      }
+    }
+}

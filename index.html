@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Reserve Flights</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+        <header id="main-header">
+            <div class="header-top main_color_background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="phone-number">
+                                Telephone: <a href="#">+51 000 0000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="it-header">
+                <div class="container">
+                    <div class="nav">
+                        <a href="index.html"></a>
+                        <div class="logo"><img alt="ITEREO Travel Planner" src="img/logo-itp.png"></div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- TOP AREA -->
+        <div class="top-area show-onload">
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-parallax" style="background-image:url(img/background_flights.jpg);"></div>
+                <div class="bg-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="search-flights search-flights-bg mt50">
+                                    <div class="tabbable">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in active" id="tab-1">
+                                                <h4 class="title-search-flights">Search Flight(s)</h4>
+                                                <form>
+                                                    <div class="tabbable">
+                                                        <ul class="nav nav-pills nav-sm nav-no-br mb10" id="flightChooseTab">
+                                                            <li class="active"><a data-toggle="tab" href="#flight-search-1">Round Trip</a></li>
+                                                            <li><a data-toggle="tab" href="#flight-search-2">One Way</a></li>
+                                                            <li><a data-toggle="tab" href="#flight-search-3">Multiple Destination</a></li>
+                                                        </ul>
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane fade in active" id="flight-search-1">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group form-group-lg form-group-icon-left">
+                                                                            <i class="fa fa-map-marker input-icon"></i> <label>From</label> <input class=" form-control" placeholder="From" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group form-group-lg form-group-icon-left">
+                                                                            <i class="fa fa-map-marker input-icon"></i> <label>To</label> <input class=" form-control" placeholder="To" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-daterange" data-date-format="M d, D">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-icon-left">
+                                                                                <i class="fa fa-calendar input-icon input-icon-highlight"></i> <label>Date from</label> <input class="form-control" name="start" placeholder="Date from" type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-icon-left">
+                                                                                <i class="fa fa-calendar input-icon input-icon-highlight"></i> <label>Date to</label> <input class="form-control" name="end" placeholder="Date to" type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="popover-markup">
+                                                                                <div class="trigger form-group form-group-lg form-group-icon-left">
+                                                                                    <i class="fa fa-user input-icon input-icon-highlight"></i> <label>Passenger</label> <input class="form-control" disabled id="passengers" name="passengers" type="number" value="1">
+                                                                                </div>
+                                                                                <div class="content hide">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Adult</b><br>
+                                                                                            <i>(above 17)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="adult" max="9" min="1" name="adult" type="text" value="1"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Child</b><br>
+                                                                                            <i>(3 - 17)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="child" max="9" min="0" name="child" type="text" value="0"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Infant</b><br>
+                                                                                            <i>(belove 2)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="infant" max="9" min="0" name="infant" type="text" value="0"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div><a class="mt08 btn btn-default btn-block demise">Select</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                                <label>Flight Class</label> <select class="form-control">
+                                                                                    <option selected="selected">
+                                                                                        Economy
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        Premium Economy
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        Business
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        First
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="flight-search-2">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group form-group-lg form-group-icon-left">
+                                                                            <i class="fa fa-map-marker input-icon"></i> <label>From</label> <input class=" form-control" placeholder="From" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group form-group-lg form-group-icon-left">
+                                                                            <i class="fa fa-map-marker input-icon"></i> <label>To</label> <input class=" form-control" placeholder="To" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-daterange" data-date-format="M d, D">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-icon-left">
+                                                                                <i class="fa fa-calendar input-icon input-icon-highlight"></i> <label>Date from</label> <input class="form-control" name="start" placeholder="Date from" type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="popover-markup">
+                                                                                <div class="trigger form-group form-group-lg form-group-icon-left">
+                                                                                    <i class="fa fa-user input-icon input-icon-highlight"></i> <label>Passenger</label> <input class="form-control" disabled id="passengers" name="passengers" type="number" value="1">
+                                                                                </div>
+                                                                                <div class="content hide">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Adult</b><br>
+                                                                                            <i>(above 17)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="adult" max="9" min="1" name="adult" type="text" value="1"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Child</b><br>
+                                                                                            <i>(3 - 17)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="child" max="9" min="0" name="child" type="text" value="0"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Infant</b><br>
+                                                                                            <i>(belove 2)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="infant" max="9" min="0" name="infant" type="text" value="0"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div><a class="mt08 btn btn-default btn-block demise">Select</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                                <label>Flight Class</label> <select class="form-control">
+                                                                                    <option selected="selected">
+                                                                                        Economy
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        Premium Economy
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        Business
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        First
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="flight-search-3">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group form-group-lg form-group-icon-left">
+                                                                            <i class="fa fa-map-marker input-icon"></i> <label>From</label> <input class=" form-control" placeholder="From" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group form-group-lg form-group-icon-left">
+                                                                            <i class="fa fa-map-marker input-icon"></i> <label>To</label> <input class=" form-control" placeholder="To" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                 <div class="col-sm-12">
+                                                                  <a class="add-another-destination" href=""><u>+Add another destination</u></a>
+                                                                 </div>
+                                                                </div>
+                                                                <div class="input-daterange" data-date-format="M d, D">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-icon-left">
+                                                                                <i class="fa fa-calendar input-icon input-icon-highlight"></i> <label>Date from</label> <input class="form-control" name="start" placeholder="Date from" type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="popover-markup">
+                                                                                <div class="trigger form-group form-group-lg form-group-icon-left">
+                                                                                    <i class="fa fa-user input-icon input-icon-highlight"></i> <label>Passenger</label> <input class="form-control" disabled id="passengers" name="passengers" type="number" value="1">
+                                                                                </div>
+                                                                                <div class="content hide">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Adult</b><br>
+                                                                                            <i>(above 17)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="adult" max="9" min="1" name="adult" type="text" value="1"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Child</b><br>
+                                                                                            <i>(3 - 17)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="child" max="9" min="0" name="child" type="text" value="0"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row mr0">
+                                                                                            <label class="control-label col-xs-5"><b>Infant</b><br>
+                                                                                            <i>(belove 2)</i></label>
+                                                                                            <div class="input-group number-spinner col-xs-7">
+                                                                                                <span class="input-group-btn"><a class="btn btn-primary" data-dir="dwn"><span class="fa fa-minus"></span></a></span> <input class="form-control text-center" disabled id="infant" max="9" min="0" name="infant" type="text" value="0"> <span class="input-group-btn"><a class="btn btn-primary-invert" data-dir="up"><span class="fa fa-plus"></span></a></span>
+                                                                                            </div>
+                                                                                        </div><a class="mt08 btn btn-default btn-block demise">Select</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                                <label>Flight Class</label> <select class="form-control">
+                                                                                    <option selected="selected">
+                                                                                        Economy
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        Premium Economy
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        Business
+                                                                                    </option>
+                                                                                    <option>
+                                                                                        First
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons-home">
+                                                     <a href="flight.html" class="btn btn-primary" type="submit"><i class="fa fa-plane input-icon"></i>Search for Flights</a>
+                                                     <a class="btn btn-primary-white" type="submit"><i class="fa fa-angle-left input-icon"></i>Back to your itinerary</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END TOP AREA  -->
+        <footer id="main-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-12 mb0">
+                        <div>
+                            <b>Powered by</b>
+                        </div><a class="logo-footer" href="index.html"><img alt="Image Alternative text" src="img/logo-itp.png" title="Image Title"></a> <span class="rights-reserved">All rights reserved: ©Global Encounters™ 1999-2017</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slimmenu.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/bootstrap-timepicker.js"></script>
+        <script src="js/bootstrap-pax.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/custom.js"></script>
+
+    </div>
+</body>
+</html>

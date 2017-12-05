@@ -1,0 +1,161 @@
+/*/*-----_flight.html-----*/
+.booking-filters{
+	width:auto;
+}
+.booking-item, .booking-flight-details{
+	padding:0px;
+}
+/*Information that you want to search*/
+.form-group.form-group-lg label {
+	font-size: 14px;
+	margin-bottom: 7px;
+	font-weight: bold;
+}
+
+.flight-information {
+	padding: 0;
+	.col-md-2 {
+		padding: 0;
+		p {
+			font-size: 13px;
+		}
+	}
+}
+
+/*Change search*/
+.change-search {
+	padding: 26px;
+	text-align: center;
+	border-left: 1px solid $color_alabaster;
+}
+
+/*Flight option(s)*/
+.col-logo {
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+.booking-item .booking-item-airline-logo > img {
+	margin: auto;
+	display: block;
+}
+.booking-item-airline-logo > p {
+	text-align: center;
+}
+.col-price-table {
+	padding-right: 0px;
+    padding-left: 0px;
+
+}
+.col-flight {
+	padding: 20px 0 10px;
+}
+.col-buttons {
+	padding: 20px 0 10px;
+}
+/*Stops*/
+.stop {
+	width: 100%;
+	height: 2.5px;
+	display: inline-block;
+	background: $color_storm_gray;
+	position: relative;
+	margin: 6px 0;
+}
+.dot {
+	border: 1px solid $white;
+	position: absolute;
+	top: -4px;
+}
+.dot-inner {
+	display: block;
+	border: 2px solid $color_storm_gray;
+	width: 10px;
+	height: 10px;
+	background-color: $white;
+}
+.stops {
+	text-align: center;
+	font-size: 13px;
+}
+.duration-time {
+	text-align: center;
+	font-size: 13px;
+}
+
+/*More flight times option*/
+.flight-times {
+	text-align: center;
+	font-size: 13px;
+	margin-right: 10px;
+	button {
+
+		border-radius: 16px;
+		color: $color_text_default;
+		padding: 2px 14px 2px 6px;
+		margin: 4px 0 2px;
+	}
+}
+input.flight-time_radio-button {
+	float: left;
+	margin: 5px 19px 0 29px;
+}
+.flight-time_departure-time {
+	float: left;
+	margin-right: 39px;
+}
+.flight-time_travel-time {
+	float: left;
+	margin-right: 39px;
+}
+.flight-time_arrival-time {
+	float: left;
+	margin-right: 39px;
+}
+.flight-time_arrival-date {
+	float: left;
+	margin-right: 39px;
+}
+.box-more-flight-times {
+	padding: 5px 0;
+	height: 32px;
+	font-size: 13px;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid $color_gallery;
+	&:nth-of-type(odd) {
+		background-color: $color_alabaster;
+	}
+}
+
+/*Reserve button & ticket conditions*/
+.reserve-button {
+	font-size: 14px;
+}
+.button-reserve--ticket-cond{
+    margin: 20px auto auto auto;
+    display: block;
+    text-align: center;
+}
+
+/*Button details*/
+.button--flight-details {
+	color: $main_color;
+	text-decoration: underline;
+	font-size: 13px;
+	text-align: center;
+	&:hover {
+		color: $main_color!important;
+		text-decoration: underline;
+	}
+	&:active {
+		color: $main_color!important;
+		text-decoration: underline;
+	}
+}
+
+/*Flight option(s) details*/
+.booking-flight-details {
+	padding: 20px 9px 10px;
+}
+
+/*/*-----finish _flight.html-----*/

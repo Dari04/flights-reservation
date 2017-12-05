@@ -1,0 +1,32 @@
+/*/*-----_general-----*/
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: $white;
+}
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: $background-color;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: $second_main_color;
+}
+::selection {
+	background: $main_color;
+	color: $white;
+}
+.box-content {
+	border: 1px solid #6666663d;
+	box-shadow: 0 2px 1px $box_shadow_color;
+	margin-bottom:20px;
+}
+.box-content-darkblue {
+	color: $white;
+	margin: 0;
+	padding: 4px 25px;
+}
+.box-content-white {
+	background: $white;
+	padding: 22px 32px;
+}
+/*/*-----finish _general-----*/

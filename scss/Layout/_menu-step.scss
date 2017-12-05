@@ -1,0 +1,52 @@
+/*/*-----_menu-step-----*/
+
+.stepwizard {
+	padding: 22px 0 12px 0;
+	display: table;
+	width: 100%;
+	position: relative;
+}
+.btn-circle-reserve {
+	width: 37px;
+	height: 37px;
+	text-align: center;
+	padding: 6px 4px;
+	font-size: 18px;
+	line-height: 1.0;
+	border-radius: 100%;
+	border: 3px solid $white;
+	&.disabled {
+		@extend %extend_2;
+	}
+}
+.btn-circle-reserve[disabled] {
+	@extend %extend_2;
+}
+.stepwizard-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+	width: 25%;
+	padding: 0 1px;
+	p {
+		margin-top: 15px;
+		color: $white;
+		font-weight: bold;
+	}
+}
+.stepwizard-row {
+	display: table;
+	&:before {
+		top: 42px;
+		bottom: 0;
+		position: absolute;
+		content: " ";
+		width: 67%;
+		height: 2px;
+		background-color: $white;
+		left: 16.56%;
+	}
+}
+
+
+/*/*-----finish _menu-step-----*/

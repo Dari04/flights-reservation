@@ -1,0 +1,32 @@
+/*/*-----_pax-info-----*/
+.nav-tabs {
+	border-bottom: 1px solid $main_color;
+	> .pax-tab {
+		> a {
+			padding: 8px 6px;
+			background-color: $white;
+		
+			border-top-left-radius: 5px;
+			
+			border-top-right-radius: 5px;
+			color: $color_text_default;
+			border: 1px solid $color_ccc;
+			border-bottom-color: $main_color;
+		}
+		&.active > a {
+			@extend %extend_1;
+			&:hover {
+				@extend %extend_1;
+			}
+			&:focus {
+				@extend %extend_1;
+			}
+		}
+	}
+}
+.alert {
+	padding: 9px;
+	font-size: 15px;
+}
+
+/*/*-----finish _pax-info-----*/

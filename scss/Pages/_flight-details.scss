@@ -1,0 +1,109 @@
+/*/*-----_flight-details.html-----*/
+.box-flight-details{
+	word-wrap: break-word;
+	font-size:13px;
+}
+/*Flight details bubble*/
+.flight-details-bubble {
+	border: 2px solid $color_gallery;
+	border-radius: 3px;
+	width: 100%;
+	max-width: 75%;
+	display: block;
+	margin: auto;
+	padding: 10px 5px;
+	position: relative;
+	margin: 6px auto 6px auto;
+	b{
+		color:$second_main_color;
+	}
+	.collapsing{
+		height:0!important;
+	}
+}
+/*Big box price table*/
+.price-table {
+	background: $color_alabaster;
+	padding: 20px 15px 12px;
+	border-right: 1px solid $color_alto;
+	border-left: 1px solid $color_alto;
+	border-bottom: 1px solid $color_alto;
+	p {
+		font-size: 13px;
+		line-height: 1.0em;
+	}
+	.booking-item-airline-logo {
+		> p {
+			margin-bottom: 0;
+			margin: 5px 0 13px;
+			line-height: 1.3em;
+			text-align: center;
+		}
+		> img {
+			width: 26%;
+			margin: auto;
+			display: block;
+		}
+	}
+}
+.col-price-table .price-table{
+		p {
+		font-size: 11px;
+		line-height: 1.0em;
+	}
+}
+.sort--display-more-flight-info {
+    background: #eeeeee;
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    right: -12.5px;
+    padding: 5px 3px;
+    float: right;
+    border: none;
+}
+.segment-departure {
+	position: absolute;
+	top: 5px;
+	left: 48.2%;
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	background: $white;
+	border: 2px solid $main_color;
+	z-index: 2;
+	display: block;
+}
+.segment-destination {
+	position: absolute;
+	top: 5px;
+	left: 48.2%;
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	background: $white;
+	border: 2px solid $main_color;
+	display: block;
+	&:after {
+		content: "";
+		position: absolute;
+		border: 1px solid $main_color;
+		padding: 0;
+		bottom: 9px;
+		top: -95px;
+		left: 3.2px;
+	}
+}
+.segment-destination-last {
+	background: $main_color;
+}
+.checkbox--agree--ticket-cond{
+	margin:0!important;	
+}
+.agree--ticket--conditions--container{
+	margin:auto;
+	text-align:center;
+}
+/*/*-----finish _flight-details.html-----*/
+

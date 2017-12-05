@@ -1,0 +1,106 @@
+//colors
+$main_color: #30a8de;
+$main_color_hover:#2792c2;
+$second_main_color: #414957;
+$white: #fff;
+$background-color: #f2efea;
+$box_shadow_color: rgba(0,0,0,0.2);
+$color_green: #008800;
+$background_footer: #f1f1f1;
+$color_alabaster: #f9f9f9;
+$color_alto: #dddddd;
+$color_storm_gray: #717585;
+$color_text_default: #666;
+$color_gallery: #eeeeee;
+$color_ccc: #ccc;
+
+
+/*START CSS.PHTML*/
+::selection {
+    background: $main_color;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $second_main_color;
+}
+.main_color_text{
+	color:$main_color;
+}
+.main_color_background{
+	background:$main_color;
+}
+.main_color_text--hover{
+	&:hover{
+			color:$main_color_hover;
+	}
+	&:active{
+		color:$main_color_hover;
+	}
+	&:focus{
+		color:$main_color_hover;
+	}
+}
+.main_color_background--hover{
+	background:$main_color_hover;
+	&:hover{background:$main_color_hover;}
+	&:active{
+		background:$main_color_hover;
+	}
+	&:focus{
+		background:$main_color_hover;
+	}
+}
+.main_color_border{
+	border-color:$main_color;
+}
+.box-content-darkblue {
+	background: $second_main_color;
+}
+.flight-details-bubble b {
+    color: $second_main_color;
+}
+.stepwizard{
+	background: $second_main_color;
+}
+.booking-filters{
+	background: $second_main_color;
+}
+.nav-pills > li.active > a {
+	background-color: $main_color_hover;
+	&:hover {
+		background-color: $main_color_hover;
+	}
+	&:focus {
+		background-color: $main_color_hover;
+	}
+}
+a {
+   	color:$main_color;
+   	&:hover{
+		   	color:$main_color_hover;
+	}
+}
+.btn-primary-white {
+	border-color: $main_color;
+	color: $main_color;
+	&:hover {
+		background: $main_color_hover;
+		border-color: $main_color;
+	}
+}
+.btn-primary {
+	background: $main_color;
+	border-color: $main_color;
+	&:hover {
+		background: $main_color_hover;
+		border-color: $main_color;
+	}
+	&:focus {
+		background: $main_color_hover;
+		border-color: $main_color;
+	}
+	&:active {
+		background: $main_color_hover;
+		border-color: $main_color;
+	}
+}
+/*FINISH CSS.PHTML*/

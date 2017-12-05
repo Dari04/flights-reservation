@@ -1,0 +1,22 @@
+//@extend-elements
+
+//original selectors
+//.nav-tabs >.pax-tab.active >a, .nav-tabs >.pax-tab.active >a:hover, .nav-tabs >.pax-tab.active >a:focus
+%extend_1 {
+	color: $color_text_default;
+	background-color: $white;
+	border: 1px solid $main_color;
+	border-bottom-color: transparent;
+	cursor: default;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+//original selectors
+//.btn-circle-reserve.disabled, .btn-circle-reserve[disabled]
+%extend_2 {
+	background-color: $second_main_color;
+	border-color: $white;
+	color: $white;
+	opacity: 5;
+}

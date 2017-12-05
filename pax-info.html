@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Reserve Flights</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+        <header id="main-header">
+            <div class="header-top main_color_background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="phone-number">
+                                Telephone: <a href="#">+51 000 0000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="it-header">
+                <div class="container">
+                    <div class="nav">
+                        <div class="logo"><a href="index.html"><img alt="ITEREO Travel Planner" src="img/logo-itp.png"></a></div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- TOP AREA -->
+            <div class="stepwizard">
+                <div class="stepwizard-row container setup-panel">
+                    <div class="stepwizard-step">
+                        <a href="flight.html" type="button" class="btn-circle-reserve btn btn-default">1</a>
+                        <p>SEARCH</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a type="button" href="flight-details.html" class="btn-circle-reserve btn btn-default">2</a>
+                        <p>FLIGHT DETAILS</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a href="#step-3" type="button" class="btn-circle-reserve btn btn-primary">3</a>
+                        <p>PASSENGER INFORMATION</p>
+                    </div>
+                     <div class="stepwizard-step">
+                        <a href="#step-4" type="button" class="btn-circle-reserve btn btn-default" disabled="disabled">4</a>
+                        <p>RESERVATION</p>
+                    </div>
+                </div>
+            </div>
+        <div class="gap"></div>
+
+        <div class="container">
+            <div class="box-content">
+                <div class="box-content-darkblue">
+                <h4>Passenger information</h4>
+                </div>
+              <div class="box-content-white">
+                    <div class="alert alert-warning text-center">
+                    <strong>You didn't add passenger(s) information! Please add!</strong>
+                    </div>
+                    <!--
+                    <div class="alert alert-success text-center">
+                        <strong>Can you review the information please?</strong>
+                    </div>-->
+                    <ul class="nav nav-tabs">
+                        <li class="pax-tab active">
+                            <a data-toggle="tab" href="#pax1" aria-expanded="true">1</a>
+                        </li>
+                        <li class="pax-tab">
+                            <a data-toggle="tab" href="#pax2" aria-expanded="false">2</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="pax1">
+                            <div class="basic-info">
+                              <h5><strong>Basic information:</strong></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Gender <span class="obligatory">*</span></label> <select class="form-control" required>
+                                                    <option selected="selected">Female</option>
+                                                    <option>Male</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>First name as in Passport <span class="obligatory">*</span></label> 
+                                        <input class=" form-control" placeholder="First name as in Passport" type="text" required>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Last name as in Passport <span class="obligatory">*</span></label> 
+                                        <input class=" form-control" placeholder="Last name as in Passport" type="text" required>
+                                       </div>
+                                    </div>
+                              </div>
+                               <div class="row">
+                                    <div  class="input-daterange" data-date-format="M d, D">
+                                        <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-icon-left">
+                                               <i class="fa fa-calendar input-icon input-icon-highlight"></i> 
+                                                <label>Date of birth <span class="obligatory">*</span></label> <input class="form-control" name="start" placeholder="Date of birth" type="text" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Frequent flyer number </label> 
+                                        <input class="form-control" placeholder="Frequent flyer number" type="text">
+                                       </div>
+                                    </div>
+                               </div>                 
+                            </div>
+                            <div class="comple-info">
+                              <h5><strong>Complementary information:</strong></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>E-mail </label> 
+                                        <input class=" form-control" placeholder="E-mail" type="email">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Phone </label> 
+                                        <input class=" form-control" placeholder="Phone" type="tel">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Nationality</label> <select class="form-control">
+                                                    <option selected="selected">Peruvian</option>
+                                                    <option>English</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                              </div>
+                               <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Passport number </label> 
+                                        <input class="form-control" placeholder="Passport number" type="text">
+                                       </div>
+                                    </div>
+                                    <div  class="input-daterange" data-date-format="M d, D">
+                                        <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-icon-left">
+                                               <i class="fa fa-calendar input-icon input-icon-highlight"></i> 
+                                                <label>Passport expiration date</label> <input class="form-control" name="start" placeholder="Passport expiration date" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Country</label> <select class="form-control">
+                                                    <option selected="selected">Peru</option>
+                                                    <option>England</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                               </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Postal code </label> 
+                                        <input class="form-control" placeholder="Postal code" type="text">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Select special meal</label> <select placeholder="Select special meal" class="form-control">
+                                                    <option selected="selected">Vegetarian</option>
+                                                    <option>Seafood</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Company name </label> 
+                                        <input class="form-control" placeholder="Company name" type="text">
+                                       </div>
+                                    </div>
+                               </div>               
+                            </div>                
+                        </div>
+                        <div class="tab-pane fade" id="pax2">
+                            <div class="basic-info">
+                              <h5><strong>Basic information:</strong></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Gender <span class="obligatory">*</span></label> <select class="form-control" required>
+                                                    <option selected="selected">Female</option>
+                                                    <option>Male</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>First name as in Passport <span class="obligatory">*</span></label> 
+                                        <input class=" form-control" placeholder="First name as in Passport" type="text" required>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Last name as in Passport <span class="obligatory">*</span></label> 
+                                        <input class=" form-control" placeholder="Last name as in Passport" type="text" required>
+                                       </div>
+                                    </div>
+                              </div>
+                               <div class="row">
+                                    <div  class="input-daterange" data-date-format="M d, D">
+                                        <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-icon-left">
+                                               <i class="fa fa-calendar input-icon input-icon-highlight"></i> 
+                                                <label>Date of birth <span class="obligatory">*</span></label> <input class="form-control" name="start" placeholder="Date of birth" type="text" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Frequent flyer number </label> 
+                                        <input class="form-control" placeholder="Frequent flyer number" type="text">
+                                       </div>
+                                    </div>
+                               </div>                 
+                            </div>
+                            <div class="comple-info">
+                              <h5><strong>Complementary information:</strong></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>E-mail </label> 
+                                        <input class=" form-control" placeholder="E-mail" type="email">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Phone </label> 
+                                        <input class=" form-control" placeholder="Phone" type="tel">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Nationality</label> <select class="form-control">
+                                                    <option selected="selected">Peruvian</option>
+                                                    <option>English</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                              </div>
+                               <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Passport number </label> 
+                                        <input class="form-control" placeholder="Passport number" type="text">
+                                       </div>
+                                    </div>
+                                    <div  class="input-daterange" data-date-format="M d, D">
+                                        <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-icon-left">
+                                               <i class="fa fa-calendar input-icon input-icon-highlight"></i> 
+                                                <label>Passport expiration date</label> <input class="form-control" name="start" placeholder="Passport expiration date" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Country</label> <select class="form-control">
+                                                    <option selected="selected">Peru</option>
+                                                    <option>England</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                               </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Postal code </label> 
+                                        <input class="form-control" placeholder="Postal code" type="text">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                    <label>Select special meal</label> <select placeholder="Select special meal" class="form-control">
+                                                    <option selected="selected">Vegetarian</option>
+                                                    <option>Seafood</option>
+                                                    </select>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="form-group form-group-lg">
+                                        <label>Company name </label> 
+                                        <input class="form-control" placeholder="Company name" type="text">
+                                       </div>
+                                    </div>
+                               </div>               
+                            </div>                
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="row">
+                <button class="button-next btn btn-primary" type="submit">
+                <a href="reservation.html"></i>Next step <i class="fa fa-angle-right input-icon"></i></a></button>
+            </div>
+        </div>
+        
+
+
+
+
+
+        
+        <footer id="main-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-12 mb0">
+                        <div>
+                            <b>Powered by</b>
+                        </div><a class="logo-footer" href="index.html"><img alt="Image Alternative text" src="img/logo-itp.png" title="Image Title"></a> <span class="rights-reserved">All rights reserved: ©Global Encounters™ 1999-2017</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slimmenu.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/bootstrap-timepicker.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/custom.js"></script>
+    </div>
+</body>
+
+</html>
+
+
